@@ -23,5 +23,9 @@
     <button>Signup</button>
 </form>
 
+<?php
+check_signup_errors();
+?>
+
 </body>
 </html>
