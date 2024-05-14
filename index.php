@@ -1,3 +1,9 @@
+<?php
+require_once 'includes/config_session.inc.php';
+require_once 'includes/signup_view.inc.php';
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">

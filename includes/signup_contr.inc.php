@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_type=1);
+declare(strict_types=1);
 
 function is_input_empty(string $username,string $pwd,string $email) {
     if (empty($username) || empty($pwd) || empty($email)) {
@@ -35,4 +35,9 @@ function is_email_registered(object $pdo, string $email) {
     } else{
         return false;
     }
+}
+
+function create_user(object $pdo, string $pwd, string $username, string $email) 
+{
+    set_user($pdo, $pwd, $username, $email);
 }

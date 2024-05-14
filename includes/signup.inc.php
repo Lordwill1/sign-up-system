@@ -33,6 +33,8 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
         header("Location: ../index.php");
     }
 
+    create_user();
+
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
     }
