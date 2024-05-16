@@ -18,7 +18,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
         $errors["empty_input"] = "Fill in all fields!";
      }
      if (is_email_invalid($email)) {
-        $errors["invalid_email"] = "Invalid email used2!";
+        $errors["invalid_email"] = "Invalid email used!";
      }
      if (is_username_taken($pdo, $username)) {
         $errors["username_taken"] = "Username already taken!";
@@ -29,7 +29,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 
     require_once 'config_session.inc.php';
 
-    if ($errors){
+    if ($errors) {
         $_SESSION["errors_signup"] = $errors;
 
         $signupData = [
