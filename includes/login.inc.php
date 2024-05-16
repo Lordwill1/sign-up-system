@@ -35,6 +35,7 @@ $newSessionId = session_create_id();
 $sessionId = $newSessionId . '-' . $result["id"];
 session_id($sessionId);
 
+
 $_SESSION["user_id"] = $result["id"];
 $_SESSION["user_username"] = htmlspecialchars ($result["username"]);
 
